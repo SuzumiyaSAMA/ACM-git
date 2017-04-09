@@ -8,7 +8,6 @@ bool CheakPrimerNumber(int INPUT){
 		if (!(INPUT%count)) return false;
 	return true;
 }
-bool CheakPrimerNumber(int INPUT);
 int main(void) {
     int TestTime = 0;
     cin >> TestTime;
