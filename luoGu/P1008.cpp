@@ -25,16 +25,11 @@ bool check(int num){
 }
 
 int main(int argc, const char * argv[]) {
-	for (int a = 1; a <= 9; a++){
-		for (int b = 1; b <= 9; b++){
-			for (int c = 1; c <= 9; c++){
-				int num = a*100 + b*10 + c;
-				if(num*3 >= 1000)
-					continue;
-				if(check(num))
-					cout << num << " " << num*2 << " " << num*3 << endl;
-			}
-		}
+	for (int num = 111; num <= 999; num++){
+		if(num*3 >= 1000)
+			continue;
+		if(check(num))
+			cout << num << " " << num*2 << " " << num*3 << endl;
 	}
 	return 0;
 }
