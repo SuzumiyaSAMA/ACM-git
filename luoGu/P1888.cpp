@@ -14,9 +14,6 @@ int main(int argc, const char * argv[]) {
 	sort(begin(iar), end(iar));
 	int temp = gcd(iar[0], iar[2]);
 	iar[0] /= temp; iar[2]/= temp;
-	if(iar[2] % iar[0])
-		cout << iar[0] << '/' << iar[2];
-	else
-		cout << iar[0] << endl;
+	cout << iar[0] << '/' << iar[2];
 	return 0;
 }
