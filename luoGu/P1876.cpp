@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void way1(){										//an idoit method
+void way1(){										//an idiot method
 	bool light[10000000000000] = {false};
 	int N = -1;
 	bool flag = false;
